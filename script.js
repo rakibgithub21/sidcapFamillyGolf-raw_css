@@ -1,5 +1,6 @@
 let cursor = document.querySelector('#cursor');
 let cursorBlur = document.querySelector('#cursor-blur');
+
 document.addEventListener('mousemove', function (e) {
     // cursor.style.left=e.x+'px'
     // cursor.style.top=e.y+'px'
@@ -21,6 +22,19 @@ document.addEventListener('mousemove', function (e) {
     })
 })
 
+// let h4all = document.querySelectorAll('#nav h4')
+// h4all.forEach(h4 => {
+//     h4.addEventListener('mouseenter', function () {
+//         cursor.style.scale = 2,
+//             cursor.style.border = '1px solid #fff',
+//             cursor.style.backgroundColor = 'transparent'
+//    })
+//     h4.addEventListener('mouseleave', function () {
+//         cursor.style.scale = 1,
+//             cursor.style.border = '0px solid #95C11E',
+//             cursor.style.backgroundColor = '#95C11E'
+//    })
+// })
 
 gsap.to('#nav', {
     backgroundColor: '#000',
@@ -45,5 +59,32 @@ gsap.to('#main', {
         start:'top -25%',
         end: 'top -70%',
         scrub:2
+    }
+})
+
+
+gsap.from('#about-us img,#about-us-in', {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '#about-us',
+        scroller: 'body',
+        start:'top 50%',
+        end: 'top 58%',
+        scrub:3
+    }
+})
+gsap.from('.card', {
+    scale:0,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.card',
+        scroller: 'body',
+        markers: true,
+        start:'top 60%',
+        end: 'top 70%',
+        scrub:3
     }
 })
