@@ -51,6 +51,8 @@ video {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* ------------- page 1 ---------------- */
+
 #page1 {
     height: 100vh;
     width: 100%;
@@ -89,4 +91,10 @@ video {
     font-weight: 500;
     width: 40%;
 
+}
+
+/* ------------ page2 -------------- */
+#page2{
+    height: 100vh;
+    width: 100%;
 }
