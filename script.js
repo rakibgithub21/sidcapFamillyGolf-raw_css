@@ -75,16 +75,31 @@ gsap.from('#about-us img,#about-us-in', {
         scrub:3
     }
 })
-gsap.from('.card', {
-    scale:0,
+
+
+gsap.from('#colon1', {
     opacity: 0,
-    duration: 1,
+    y:-70,
+    x:-70,
     scrollTrigger: {
-        trigger: '.card',
+        trigger: '#colon1',
         scroller: 'body',
-        markers: true,
-        start:'top 60%',
-        end: 'top 70%',
-        scrub:3
+        markers:true,
+        start: 'top 50%',
+        end: 'top 58%',
+        scrub: 3
+    }
+})
+gsap.from('#colon2', {
+    opacity: 0,
+    y:-70,
+    x:-70,
+    scrollTrigger: {
+        trigger: '#colon1',
+        scroller: 'body',
+        markers:true,
+        start: 'top 50%',
+        end: 'top 58%',
+        scrub: 3
     }
 })
