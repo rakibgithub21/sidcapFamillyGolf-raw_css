@@ -90,6 +90,7 @@ video {
     font-size: 22px;
     font-weight: 500;
     width: 40%;
+    z-index: 10;
 
 }
 
@@ -97,4 +98,26 @@ video {
 #page2{
     height: 100vh;
     width: 100%;
+    z-index: 10;
+}
+
+
+/* cursor */
+
+#cursor{
+    width: 20px;
+    height: 20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    width: 400px;
+    height: 400px;
+    background-color: #96c11e79;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    filter: blur(50px);
 }
